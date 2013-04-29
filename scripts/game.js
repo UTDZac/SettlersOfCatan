@@ -14,7 +14,8 @@
 
 var catan = {
 data: {
-	p1: {
+    p1: {
+        color: "red",
 		pieces: {
 			settlements: 5,
 			cities: 4,
@@ -26,7 +27,8 @@ data: {
 		points: 0
 	},
 	p2: {
-		pieces: {
+	    color: "blue",
+	    pieces: {
 			settlements: 5,
 			cities: 4,
 			roads: 15
@@ -37,7 +39,8 @@ data: {
 		points: 0
 	},
 	board: {
-		tiles: {},
+        dice: [1, 2],
+		tiles: {}, //19
 		intersections: {},
 		ports: {},
 		roads: {}
@@ -47,5 +50,10 @@ data: {
 			1, 1, 1, 1, 1,
 			2, 2, 3, 3, 4, 4]
 	}
+},
+ops: {
+    placeSettlement: new function () {
+    },
+
 }
 }
